@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>Watchmark</title>
+	<link href="https://raw.github.com/gist/3216716/2e66cabdafe1c9a7f354aa2ebf5bc38265e638e5/github.css" rel="stylesheet" type="text/css">
+</head>
+</head>
+<body>
+    <article id="markdown" class="markdown-body entry-content" itemprop="mainContentOfPage">
+	</article>
+
+</body>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io.connect('http://localhost');
+  socket.on('change', function (data) {
+    console.log(data);
+    var wrapper = document.getElementById('markdown');
+    wrapper.innerHTML = data.markup;
+  });
+</script>
+</html>
