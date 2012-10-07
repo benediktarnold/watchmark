@@ -5,8 +5,6 @@ watchmark is a small command line tool to watch a markdown file, parse and compi
 
 The output uses the same stylesheet as readme files on github.
 
-*Currently it's only possible to watch one file*
-
 Installation
 ============
 Pretty soon:
