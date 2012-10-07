@@ -12,7 +12,8 @@
 
 <script src="/socket.io/socket.io.js"></script>
 <script>
-  var socket = io.connect('http://localhost');
+	console.log("Connect to "+ window.location.pathname);
+  var socket = io.connect(window.location.pathname);
   socket.on('change', function (data) {
     console.log(data);
     var wrapper = document.getElementById('markdown');

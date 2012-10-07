@@ -16,6 +16,13 @@ Pretty soon:
 
 Usage
 =====
-	watchmark README.md && open http://localhost:3000
+	watchmark README.md && open http://localhost:3000/README.md
+	
+Multifile support
+-----------------
+	watchmark *.md
+
+Then open a browser on http://localhost:3000/filename.md 
+
 
 
