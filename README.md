@@ -20,7 +20,7 @@ Multifile support
 -----------------
 	watchmark *.md
 
-Then open a browser on http://localhost:3000/filename.md 
+Then open a browser on http://localhost:3000/***filename***.md 
 
 
 
