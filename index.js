@@ -6,7 +6,6 @@ app = require("http").createServer(handler),
 io = require('socket.io').listen(app),
 md = require("node-markdown").Markdown;
 
-console.log("Watching "+firstFile);
 
 function emitToSocket(name, socket){
 	fs.readFile(name, function(err,data){
@@ -29,6 +28,7 @@ function handler (req, res) {
 }
 
 app.listen(3000);
+console.log("Visit http://localhost:3000 for updates on "+firstFile);
 
 io.sockets.on('connection', function (socket) {
 	emitToSocket(firstFile, socket);
