@@ -1,6 +1,6 @@
 {
   "name": "watchmark",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "watchmark is a small command line tool to watch a markdown files, parse and compile them to html and reflect the changes to a browser in real time using socket.io",
   "main": "index.js",
   "preferGlobal": "true",

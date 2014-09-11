@@ -14,6 +14,7 @@ app.listen(3000);
 
 
 userargs.forEach(function(file){
+	console.log("Visit http://localhost:3000/"+file);
 	io.of("/"+file).on('connection', function (socket) {
 		emitToSocket(file, socket);
 	  	fs.watch(file, function(e,filename){
